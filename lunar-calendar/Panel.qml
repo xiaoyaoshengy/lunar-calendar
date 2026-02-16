@@ -387,7 +387,7 @@ Item {
                         const festivals = CalendarApi.getDateBySolar(modelData.year, modelData.month, modelData.day)["festival"].split(" ");
                         if (festivals.length > 0) {
                           const summaries = festivals.join("\n");
-                          TooltipService.show(parent, summaries, "auto", Style.tooltipDelay, Settings.data.ui.fontFixed);
+                          TooltipService.show(parent, summaries);
                         }
                       }
 
